@@ -1,0 +1,11 @@
+<div class="main-input-div">
+  <!-- MAKES A CALL TO THE CONTROLLER'S LINE 10 TO ADD
+    A TASK TO THE TASKLIST -->
+  <form name="inputForm" ng-submit="addTask(task)">
+    <!-- INPUT IS RESET AFTER EVERY SUBMISSION BY THE
+      CONTROLLERS LINE 16 -->
+    <input ng-model="task"
+          placeholder="Enter task here">
+    <button>Submit</button>
+  </form>
+</div>

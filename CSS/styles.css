@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+}
+
+ul {
+  list-style-type: decimal;
+}
+.main-app-div {}
+
+.main-title-div {
+  text-align: center;
+}
+
+.main-input-div {
+  text-align: center;
+}
+.main-todo-task-div {
+  float: left;
+  margin-left: 5vw;
+}
+
+.main-completed-task-div {
+  float: right;
+  margin-right: 5vw;
+}

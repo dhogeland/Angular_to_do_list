@@ -1,0 +1,15 @@
+<div class="main-completed-task-div">
+  These task have been completed<br>
+  <ul>
+    <!-- SHOWS EACH TASK PROVIDED BY THE CONTROLLER FILTERED BY
+     IT'S 'COMPLETED' PROPERTY AND TRACKED BY IT'S 'ID' PROPERTY -->
+    <li ng-repeat="task in taskList | filter: {completed: true} track by task.id">
+      <span>{{task.task}}</span>
+        <!-- MAKES A CALL TO THE CONTROLLER'S LINE 27
+          TO UPDATE THE TASK'S 'COMPLETED' PROPERTY TO FALSE-->
+        <button ng-click="updatingCompletedProperty(task)">
+          Not finished yet
+        </button>
+    </li>
+  </ul>
+</div>
